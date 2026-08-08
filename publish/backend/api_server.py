@@ -1,7 +1,11 @@
 import os
 from fastapi import FastAPI, HTTPException, Body, Request
 from fastapi.middleware.cors import CORSMiddleware
-import pyodbc
+try:
+    import pyodbc
+except (ImportError, Exception):
+    pyodbc = None
+
 from typing import Optional, List
 from pydantic import BaseModel
 import uvicorn
@@ -29,10 +33,16 @@ CONN_STR = (
 )
 
 def get_db_connection():
+    if pyodbc is not None:
+        try:
+            return pyodbc.connect(CONN_STR)
+        except Exception as e:
+            print(f"Database connection warning (SQL Server): {e}")
     try:
-        return pyodbc.connect(CONN_STR)
-    except Exception as e:
-        print(f"Database connection error: {e}")
+        import sqlite3
+        conn = sqlite3.connect("PortfolioDB.sqlite", check_same_thread=False)
+        return conn
+    except Exception as ex:
         raise HTTPException(status_code=500, detail="Database connection failed")
 
 # Models for Request Validation

@@ -1,7 +1,11 @@
 import os
 from fastapi import FastAPI, HTTPException, Body, Request
 from fastapi.middleware.cors import CORSMiddleware
-import pyodbc
+try:
+    import pyodbc
+except (ImportError, Exception):
+    pyodbc = None
+
 from typing import Optional, List
 from pydantic import BaseModel
 import uvicorn
@@ -29,74 +33,17 @@ CONN_STR = os.getenv("SQL_CONN_STR", (
 ))
 
 def get_db_connection():
-    try:
-        return pyodbc.connect(CONN_STR)
-    except Exception as e:
-        print(f"Database connection warning (SQL Server): {e}")
-        # In cloud environments without local MSSQL instance, return simulated/fallback connection
+    if pyodbc is not None:
         try:
-            import sqlite3
-            conn = sqlite3.connect("PortfolioDB.sqlite", check_same_thread=False)
-            return conn
-        except Exception as ex:
-            raise HTTPException(status_code=500, detail="Database connection failed")
-
-# Models for Request Validation
-class ProfileUpdate(BaseModel):
-    name: str
-    title: str
-    description: str
-    email: str
-    phone: str
-    address: str
-    linkedIn: Optional[str] = ""
-    gitHub: Optional[str] = ""
-    photo: Optional[str] = ""
-    resumePath: Optional[str] = ""
-
-class SkillSave(BaseModel):
-    id: Optional[int] = None
-    name: str
-    percentage: int
-
-class ProjectSave(BaseModel):
-    id: Optional[int] = None
-    title: str
-    description: str
-    liveLink: str
-    githubLink: str
-    tags: List[str]
-
-class ExperienceSave(BaseModel):
-    id: Optional[int] = None
-    company: str
-    role: str
-    description: str
-    duration: str
-
-class EducationSave(BaseModel):
-    id: Optional[int] = None
-    degree: str
-    institute: str
-    duration: str
-    score: str
-
-class BlogSave(BaseModel):
-    id: Optional[int] = None
-    title: str
-    excerpt: str
-
-class BlogCategorySchema(BaseModel):
-    id: Optional[int] = None
-    name: str
-    slug: str
-    description: Optional[str] = ""
-    icon: Optional[str] = "bi-tag"
-    displayOrder: Optional[int] = 0
-
-class CommentApproveSchema(BaseModel):
-    approved: bool
-
+            return pyodbc.connect(CONN_STR)
+        except Exception as e:
+            print(f"Database connection warning (SQL Server): {e}")
+    try:
+        import sqlite3
+        conn = sqlite3.connect("PortfolioDB.sqlite", check_same_thread=False)
+        return conn
+    except Exception as ex:
+        raise HTTPException(status_code=500, detail="Database connection failed")
 class GalleryItemSchema(BaseModel):
     id: Optional[int] = None
     title: str
