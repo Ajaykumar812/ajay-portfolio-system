@@ -1,0 +1,12 @@
+2026-07-01 00:00:03.622 +05:30 [INF] Received HTTP response headers after 8428.7133ms - 200
+2026-07-01 00:00:03.653 +05:30 [INF] End processing HTTP request after 8460.3444ms - 200
+2026-07-01 00:00:03.916 +05:30 [INF] Start processing HTTP request POST https://www.googleapis.com/upload/youtube/v3/videos?*
+2026-07-01 00:00:03.916 +05:30 [INF] Sending HTTP request POST https://www.googleapis.com/upload/youtube/v3/videos?*
+2026-07-01 00:00:06.472 +05:30 [INF] Received HTTP response headers after 2555.595ms - 200
+2026-07-01 00:00:06.473 +05:30 [INF] End processing HTTP request after 2556.6061ms - 200
+2026-07-01 00:00:06.474 +05:30 [INF] Start processing HTTP request PUT https://www.googleapis.com/upload/youtube/v3/videos?*
+2026-07-01 00:00:06.474 +05:30 [INF] Sending HTTP request PUT https://www.googleapis.com/upload/youtube/v3/videos?*
+2026-07-01 00:00:09.526 +05:30 [INF] Received HTTP response headers after 3051.3976ms - 200
+2026-07-01 00:00:09.526 +05:30 [INF] End processing HTTP request after 3052.0734ms - 200
+2026-07-01 00:00:09.527 +05:30 [INF] Video successfully uploaded!
+2026-07-01 00:00:09.528 +05:30 [INF] Successfully uploaded video to your YouTube channel!

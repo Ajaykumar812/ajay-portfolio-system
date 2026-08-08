@@ -1,0 +1,5 @@
+ID: 3
+Title: Gallery Item
+MediaPath in DB: ''
+Resolved FilePath: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot'
+File Exists on Disk: False

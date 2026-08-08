@@ -1,0 +1,254 @@
+2026-07-02 21:17:42.941 +05:30 [WRN] JWT SecretKey missing in configuration. JWT Auth not configured.
+2026-07-02 21:18:00.877 +05:30 [ERR] An error occurred using the connection to database 'db45290' on server 'db45290.public.databaseasp.net'.
+2026-07-02 21:18:01.482 +05:30 [WRN] Pre-migration schema check failed/skipped: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+2026-07-02 21:18:03.369 +05:30 [WRN] Migration skipped: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.
+2026-07-02 21:18:05.155 +05:30 [INF] Using uvicorn executable: "C:\Users\ak731\Desktop\DSA\Portfolio Management System\venv\Scripts\uvicorn.exe"
+2026-07-02 21:18:05.423 +05:30 [INF] Started Python AI Server automatically at C:\Users\ak731\Desktop\DSA\Portfolio Management System\AutoTube\AutoTube.AI (using venv if available).
+2026-07-02 21:18:14.975 +05:30 [WRN] Python AI Server started but health check timed out. It may still be loading.
+2026-07-02 21:18:14.976 +05:30 [INF] Unified API starting on Development
+2026-07-02 21:18:15.146 +05:30 [INF] User profile is available. Using 'C:\Users\ak731\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-02 21:18:15.218 +05:30 [INF] Gallery Auto-Uploader Background Service started.
+2026-07-02 21:18:15.269 +05:30 [INF] Start processing HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-02 21:18:15.292 +05:30 [INF] Sending HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-02 21:18:15.879 +05:30 [INF] AutoTube Video Automation Background Scheduler started. Scheduled for 9:00 AM daily.
+2026-07-02 21:18:15.881 +05:30 [INF] Next video generation cycle scheduled at "2026-07-03T09:00:00.0000000" (in 11.70 hours).
+2026-07-02 21:18:16.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2026-07-02 21:18:17.161 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-02 21:18:17.162 +05:30 [INF] Hosting environment: Development
+2026-07-02 21:18:17.162 +05:30 [INF] Content root path: C:\Users\ak731\Desktop\DSA\Portfolio Management System
+2026-07-02 21:18:27.993 +05:30 [WRN] Could not resolve channel ID from handle @CodeCrafters42: No such host is known. (www.youtube.com:443)
+2026-07-02 21:18:30.113 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-02 21:18:30.691 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-02 21:19:08.496 +05:30 [ERR] Error getting gallery items
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (64): The specified network name is no longer available.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(IDbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetAllGalleryItemsAsync(String type) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:64,State:0,Class:20
+2026-07-02 21:19:08.498 +05:30 [ERR] Error getting profile
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (64): The specified network name is no longer available.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetProfileAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 202
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:64,State:0,Class:20
+2026-07-02 21:19:08.833 +05:30 [ERR] Error getting skills
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (64): The specified network name is no longer available.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(SqlConnectionOverrides overrides, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetAllSkillsAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 291
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:64,State:0,Class:20
+2026-07-02 21:19:08.921 +05:30 [ERR] Error adding gallery item
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (64): The specified network name is no longer available.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(SqlConnectionOverrides overrides, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.AddGalleryItemAsync(GalleryModel item) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2030
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:64,State:0,Class:20
+2026-07-02 21:19:09.025 +05:30 [ERR] Error getting projects
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (64): The specified network name is no longer available.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(SqlConnectionOverrides overrides, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetAllProjectsAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 396
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:64,State:0,Class:20
+2026-07-02 21:19:09.101 +05:30 [ERR] Error creating daily AI fallback video.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (64): The specified network name is no longer available.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(SqlConnectionOverrides overrides, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.AddGalleryItemAsync(GalleryModel item) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2030
+   at Portfolio_Management_System.Services.GalleryAutoUploaderService.PerformSyncAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\Services\GalleryAutoUploaderService.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:64,State:0,Class:20
+2026-07-02 21:19:09.225 +05:30 [ERR] Error getting experience
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (64): The specified network name is no longer available.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(SqlConnectionOverrides overrides, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetAllExperienceAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2641
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:64,State:0,Class:20
+2026-07-02 21:19:34.184 +05:30 [ERR] Error getting education
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(IDbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetAllEducationAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 514
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2026-07-02 21:19:34.914 +05:30 [ERR] Error getting blog posts
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(SqlConnectionOverrides overrides, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetRecentBlogPostsAsync(Int32 count) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 745
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2026-07-02 21:19:35.959 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-02 21:19:37.617 +05:30 [ERR] Error getting profile
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 taskCompletionSource, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(SqlConnectionOverrides overrides, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetProfileAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 202
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2026-07-02 21:19:38.357 +05:30 [INF] Executed ViewResult - view Index executed in 2699.0851ms.
+2026-07-02 21:19:38.374 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System) in 67669.1752ms
+2026-07-02 21:19:38.381 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-02 21:19:38.425 +05:30 [INF] HTTP GET / responded 200 in 69614.3095 ms
+2026-07-02 21:19:38.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 82180.1527ms
+2026-07-02 21:19:38.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/images/ajay-avatar.png - null null
+2026-07-02 21:19:38.670 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/css/site.css?v=G6NZQlH0naBPIYda1dk-afnGAQp_KkMKlLmwGFTuoT4 - null null
+2026-07-02 21:19:38.733 +05:30 [INF] The file /images/ajay-avatar.png was not modified
+2026-07-02 21:19:38.733 +05:30 [INF] The file /css/site.css was not modified
+2026-07-02 21:19:38.736 +05:30 [INF] HTTP GET /images/ajay-avatar.png responded 304 in 67.2233 ms
+2026-07-02 21:19:38.737 +05:30 [INF] HTTP GET /css/site.css responded 304 in 66.6773 ms
+2026-07-02 21:19:38.739 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/css/site.css?v=G6NZQlH0naBPIYda1dk-afnGAQp_KkMKlLmwGFTuoT4 - 304 null text/css 86.7734ms
+2026-07-02 21:19:38.739 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/images/ajay-avatar.png - 304 null image/png 86.9609ms
+2026-07-02 21:19:39.339 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-02 21:19:39.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_vs/browserLink - null null
+2026-07-02 21:19:39.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 24.9556ms
+2026-07-02 21:19:41.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1933.5284ms
+2026-07-02 21:20:38.704 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/Resume/ViewResume - null null
+2026-07-02 21:20:38.998 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.ResumeController.ViewResume (Portfolio Management System)'
+2026-07-02 21:20:39.045 +05:30 [INF] Route matched with {action = "ViewResume", controller = "Resume"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ViewResume() on controller Portfolio_Management_System.Controllers.ResumeController (Portfolio Management System).
+2026-07-02 21:20:39.090 +05:30 [INF] Executing ViewResult, running view ViewResume.
+2026-07-02 21:20:53.913 +05:30 [ERR] Error getting profile
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(IDbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.GetProfileAsync() in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 202
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2026-07-02 21:20:53.982 +05:30 [INF] Executed ViewResult - view ViewResume executed in 14907.3553ms.
+2026-07-02 21:20:54.023 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.ResumeController.ViewResume (Portfolio Management System) in 14962.1618ms
+2026-07-02 21:20:54.024 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.ResumeController.ViewResume (Portfolio Management System)'
+2026-07-02 21:20:54.046 +05:30 [INF] HTTP GET /Resume/ViewResume responded 200 in 15262.7663 ms
+2026-07-02 21:20:54.085 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/Resume/ViewResume - 200 null text/html; charset=utf-8 15392.591ms
+2026-07-02 21:20:54.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-02 21:20:54.130 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 6.8837ms
+2026-07-02 21:20:54.136 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_vs/browserLink - null null
+2026-07-02 21:20:54.234 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.444ms
+2026-07-02 21:21:06.411 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/Resume/GetUserLocation - null null
+2026-07-02 21:21:06.521 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.ResumeController.GetUserLocation (Portfolio Management System)'
+2026-07-02 21:21:06.815 +05:30 [INF] Route matched with {action = "GetUserLocation", controller = "Resume"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserLocation() on controller Portfolio_Management_System.Controllers.ResumeController (Portfolio Management System).
+2026-07-02 21:21:06.975 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType26`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-02 21:21:07.330 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.ResumeController.GetUserLocation (Portfolio Management System) in 514.3438ms
+2026-07-02 21:21:07.330 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.ResumeController.GetUserLocation (Portfolio Management System)'
+2026-07-02 21:21:07.330 +05:30 [INF] HTTP GET /Resume/GetUserLocation responded 200 in 916.8846 ms
+2026-07-02 21:21:07.333 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/Resume/GetUserLocation - 200 null application/json; charset=utf-8 922.8057ms
+2026-07-02 21:25:57.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2026-07-02 21:25:58.348 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-02 21:25:58.407 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-02 21:26:05.748 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-02 21:26:07.013 +05:30 [INF] Executed ViewResult - view Index executed in 1283.2583ms.
+2026-07-02 21:26:07.015 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System) in 8606.6331ms
+2026-07-02 21:26:07.015 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-02 21:26:07.040 +05:30 [INF] HTTP GET / responded 200 in 8823.2815 ms
+2026-07-02 21:26:07.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 9536.7896ms
+2026-07-02 21:26:07.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_vs/browserLink - null null
+2026-07-02 21:26:07.818 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-02 21:26:08.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 10.2027ms
+2026-07-02 21:26:09.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1699.8205ms
+2026-07-02 21:30:18.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/ - null null
+2026-07-02 21:30:19.074 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-02 21:30:19.100 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-02 21:30:30.055 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-02 21:30:30.483 +05:30 [INF] Executed ViewResult - view Index executed in 434.463ms.
+2026-07-02 21:30:30.484 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System) in 11383.3074ms
+2026-07-02 21:30:30.484 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-02 21:30:30.485 +05:30 [INF] HTTP GET / responded 200 in 11540.3118 ms
+2026-07-02 21:30:30.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/ - 200 null text/html; charset=utf-8 11964.8379ms
+2026-07-02 21:30:30.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-02 21:30:30.569 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 5.4369ms
+2026-07-02 21:30:30.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44341/_vs/browserLink - null null
+2026-07-02 21:30:30.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44341/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.1782ms

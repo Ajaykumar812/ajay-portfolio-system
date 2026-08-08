@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ajay Kumar</string>
+    <string name="loading_text">Loading Portfolio…</string>
+    <string name="error_title">Connection Error</string>
+    <string name="error_message">Could not connect to the portfolio. Please check your internet connection.</string>
+    <string name="retry_button">Retry</string>
+    <string name="splash_tagline">Full Stack Developer • AI/ML</string>
+</resources>

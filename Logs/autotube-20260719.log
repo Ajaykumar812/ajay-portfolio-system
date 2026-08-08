@@ -1,0 +1,792 @@
+2026-07-19 13:40:52.813 +05:30 [WRN] JWT SecretKey missing in configuration. JWT Auth not configured.
+2026-07-19 13:40:59.250 +05:30 [INF] Executed DbCommand (232ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-19 13:40:59.264 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-19 13:40:59.523 +05:30 [INF] Executed DbCommand (252ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-19 13:41:00.039 +05:30 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-19 13:41:00.950 +05:30 [INF] Executed DbCommand (401ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-19 13:41:01.161 +05:30 [INF] Executed DbCommand (210ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-19 13:41:01.463 +05:30 [INF] Executed DbCommand (298ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-19 13:41:01.478 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-07-19 13:41:01.923 +05:30 [INF] Executed DbCommand (205ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-19 13:41:01.937 +05:30 [INF] Initializing AKTU multi-university portal database schema...
+2026-07-19 13:41:05.515 +05:30 [INF] Database tables initialized/verified successfully.
+2026-07-19 13:41:05.522 +05:30 [INF] Fetching Indian universities from API...
+2026-07-19 13:41:07.303 +05:30 [INF] Loaded 477 universities from API. Syncing with database...
+2026-07-19 13:41:08.037 +05:30 [INF] Successfully inserted 0 new universities from API.
+2026-07-19 13:41:11.052 +05:30 [INF] Using uvicorn executable: "C:\Users\ak731\Desktop\DSA\Portfolio Management System\venv\Scripts\uvicorn.exe"
+2026-07-19 13:41:11.322 +05:30 [INF] Started Python AI Server automatically at C:\Users\ak731\Desktop\DSA\Portfolio Management System\AutoTube\AutoTube.AI (using venv if available).
+2026-07-19 13:41:17.876 +05:30 [INF] Python AI Server health check passed.
+2026-07-19 13:41:17.877 +05:30 [INF] Unified API starting on Development
+2026-07-19 13:41:17.913 +05:30 [INF] User profile is available. Using 'C:\Users\ak731\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-19 13:41:17.942 +05:30 [INF] Gallery Auto-Uploader Background Service started.
+2026-07-19 13:41:17.966 +05:30 [INF] Start processing HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-19 13:41:17.975 +05:30 [INF] Sending HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-19 13:41:18.306 +05:30 [INF] AutoTube Video Automation Background Scheduler started. Scheduled for 9:00 AM daily.
+2026-07-19 13:41:18.306 +05:30 [INF] Next video generation cycle scheduled at "2026-07-20T09:00:00.0000000" (in 19.31 hours).
+2026-07-19 13:41:18.414 +05:30 [INF] Now listening on: http://localhost:5049
+2026-07-19 13:41:18.414 +05:30 [INF] Now listening on: http://0.0.0.0:5049
+2026-07-19 13:41:18.415 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-19 13:41:18.415 +05:30 [INF] Hosting environment: Development
+2026-07-19 13:41:18.415 +05:30 [INF] Content root path: C:\Users\ak731\Desktop\DSA\Portfolio Management System
+2026-07-19 13:41:18.597 +05:30 [INF] Received HTTP response headers after 611.7763ms - 404
+2026-07-19 13:41:18.607 +05:30 [INF] End processing HTTP request after 650.5534ms - 404
+2026-07-19 13:41:31.779 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/ - null null
+2026-07-19 13:41:31.890 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-19 13:41:32.061 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-19 13:41:32.140 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-19 13:41:32.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - null null
+2026-07-19 13:41:32.314 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\site.css'
+2026-07-19 13:41:32.329 +05:30 [INF] HTTP GET /css/site.css responded 200 in 142.0613 ms
+2026-07-19 13:41:32.378 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - 200 21861 text/css 196.4108ms
+2026-07-19 13:41:32.452 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-19 13:41:32.456 +05:30 [INF] The file /manifest.json was not modified
+2026-07-19 13:41:32.457 +05:30 [INF] HTTP GET /manifest.json responded 304 in 5.1117 ms
+2026-07-19 13:41:32.458 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 304 null application/json 5.9944ms
+2026-07-19 13:41:35.828 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:41:35.829 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:41:35.829 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.8042 ms
+2026-07-19 13:41:35.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 1.8085ms
+2026-07-19 13:41:36.233 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-19 13:41:42.972 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - null null
+2026-07-19 13:41:42.993 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-19 13:41:43.014 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\site.css'
+2026-07-19 13:41:43.014 +05:30 [INF] HTTP GET /css/site.css responded 200 in 41.9340 ms
+2026-07-19 13:41:43.024 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - 200 21861 text/css 42.7353ms
+2026-07-19 13:41:43.055 +05:30 [INF] Sending file. Request path: '/manifest.json'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\manifest.json'
+2026-07-19 13:41:43.056 +05:30 [INF] HTTP GET /manifest.json responded 200 in 62.1655 ms
+2026-07-19 13:41:43.056 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 200 301 application/json 62.571ms
+2026-07-19 13:41:45.196 +05:30 [INF] Executed ViewResult - view Index executed in 8885.9329ms.
+2026-07-19 13:41:45.263 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System) in 13097.4279ms
+2026-07-19 13:41:45.264 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-19 13:41:45.285 +05:30 [INF] Session started; Key:160bfc66-f965-8a91-df08-20fbaee822ea, Id:d292a429-5da0-1f50-9d9e-43b9a1d3de13
+2026-07-19 13:41:45.312 +05:30 [INF] HTTP GET / responded 200 in 13518.3879 ms
+2026-07-19 13:41:45.313 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/ - 200 null text/html; charset=utf-8 13542.8974ms
+2026-07-19 13:41:46.397 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:41:46.401 +05:30 [INF] Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\sw.js'
+2026-07-19 13:41:46.401 +05:30 [INF] HTTP GET /sw.js responded 200 in 4.3018 ms
+2026-07-19 13:41:46.402 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 200 602 text/javascript 4.673ms
+2026-07-19 13:41:53.849 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:41:53.870 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:41:53.892 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:41:54.313 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:41:54.394 +05:30 [INF] Executed ViewResult - view Login executed in 85.4147ms.
+2026-07-19 13:41:54.395 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 501.9381ms
+2026-07-19 13:41:54.395 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:41:54.395 +05:30 [INF] Session started; Key:49d64e5b-99c8-eeb5-bf83-d3a1182e8994, Id:99f40dc9-f5f2-2445-014f-0b2030e12df9
+2026-07-19 13:41:54.395 +05:30 [INF] HTTP GET /Admin/Login responded 200 in 546.4713 ms
+2026-07-19 13:41:54.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 547.7696ms
+2026-07-19 13:41:54.486 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653143306391 - null null
+2026-07-19 13:41:54.499 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:41:54.500 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 13.1258 ms
+2026-07-19 13:41:54.500 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653143306391 - 200 19965 text/css 13.6081ms
+2026-07-19 13:41:56.107 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:41:56.107 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:41:56.107 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4176 ms
+2026-07-19 13:41:56.108 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.7413ms
+2026-07-19 13:41:57.675 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5049/Admin/Login - application/x-www-form-urlencoded 217
+2026-07-19 13:41:57.725 +05:30 [INF] CORS policy execution successful.
+2026-07-19 13:41:57.734 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:41:57.763 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Portfolio_Management_System.Models.AdminLoginModel) on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:41:58.094 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/Dashboard.
+2026-07-19 13:41:58.094 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 330.8853ms
+2026-07-19 13:41:58.094 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:41:58.095 +05:30 [INF] HTTP POST /Admin/Login responded 302 in 419.1848 ms
+2026-07-19 13:41:58.096 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5049/Admin/Login - 302 0 null 421.1ms
+2026-07-19 13:41:58.119 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - null null
+2026-07-19 13:41:58.119 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:41:58.132 +05:30 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:41:59.089 +05:30 [ERR] Error getting recent messages
+System.InvalidCastException: Unable to cast object of type 'System.Boolean' to type 'System.DateTime'.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at Portfolio_Management_System.DAL.DbHelper.GetRecentMessagesAsync(Int32 count) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 1441
+2026-07-19 13:42:01.474 +05:30 [INF] Executing ViewResult, running view Dashboard.
+2026-07-19 13:42:01.870 +05:30 [INF] Executed ViewResult - view Dashboard executed in 399.416ms.
+2026-07-19 13:42:01.870 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System) in 3738.4154ms
+2026-07-19 13:42:01.870 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:42:01.873 +05:30 [INF] HTTP GET /Admin/Dashboard responded 200 in 3753.6642 ms
+2026-07-19 13:42:01.873 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - 200 null text/html; charset=utf-8 3754.0398ms
+2026-07-19 13:42:01.977 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653217826838 - null null
+2026-07-19 13:42:01.980 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:42:01.991 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 13.7822 ms
+2026-07-19 13:42:01.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653217826838 - 200 19965 text/css 14.0959ms
+2026-07-19 13:42:02.599 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:42:02.600 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:42:02.600 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:42:02.600 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:42:02.604 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - null null
+2026-07-19 13:42:02.605 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:42:02.621 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:02.621 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:02.628 +05:30 [INF] Route matched with {action = "GetExperienceDetails", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetExperienceDetails() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:02.866 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:42:02.868 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:42:02.885 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 263.9638ms
+2026-07-19 13:42:02.885 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:42:02.885 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 285.7476 ms
+2026-07-19 13:42:02.885 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 286.0953ms
+2026-07-19 13:42:02.974 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 347.5726ms
+2026-07-19 13:42:02.974 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:42:02.974 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 373.8149 ms
+2026-07-19 13:42:02.974 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 374.0808ms
+2026-07-19 13:42:04.306 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType20`10[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-19 13:42:04.327 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System) in 1698.3537ms
+2026-07-19 13:42:04.337 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:42:04.340 +05:30 [INF] HTTP GET /Admin/GetExperienceDetails responded 200 in 1734.9077 ms
+2026-07-19 13:42:04.340 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - 200 null application/json; charset=utf-8 1735.269ms
+2026-07-19 13:42:04.510 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:42:04.511 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:42:04.512 +05:30 [INF] HTTP GET /sw.js responded 304 in 1.5164 ms
+2026-07-19 13:42:04.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 1.7573ms
+2026-07-19 13:42:30.175 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/AktuRequests - null null
+2026-07-19 13:42:30.176 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.AktuRequests (Portfolio Management System)'
+2026-07-19 13:42:30.201 +05:30 [INF] Route matched with {action = "AktuRequests", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AktuRequests() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:30.860 +05:30 [INF] Executing ViewResult, running view AktuRequests.
+2026-07-19 13:42:31.739 +05:30 [INF] Executed ViewResult - view AktuRequests executed in 879.9518ms.
+2026-07-19 13:42:31.740 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.AktuRequests (Portfolio Management System) in 1538.5004ms
+2026-07-19 13:42:31.740 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.AktuRequests (Portfolio Management System)'
+2026-07-19 13:42:31.740 +05:30 [INF] HTTP GET /Admin/AktuRequests responded 200 in 1564.5234 ms
+2026-07-19 13:42:31.740 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/AktuRequests - 200 null text/html; charset=utf-8 1564.8679ms
+2026-07-19 13:42:31.827 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653517367234 - null null
+2026-07-19 13:42:31.828 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:42:31.828 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.3013 ms
+2026-07-19 13:42:31.828 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653517367234 - 200 19965 text/css 1.6941ms
+2026-07-19 13:42:31.935 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:42:31.935 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:42:31.936 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:31.945 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:42:31.945 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:42:31.946 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:32.142 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:42:32.142 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 206.0102ms
+2026-07-19 13:42:32.142 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:42:32.142 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 206.9454 ms
+2026-07-19 13:42:32.142 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 207.197ms
+2026-07-19 13:42:32.142 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:42:32.143 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 197.2194ms
+2026-07-19 13:42:32.143 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:42:32.143 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 197.8336 ms
+2026-07-19 13:42:32.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 198.0384ms
+2026-07-19 13:42:33.454 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:42:33.456 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:42:33.456 +05:30 [INF] HTTP GET /sw.js responded 304 in 1.6682 ms
+2026-07-19 13:42:33.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 3.0203ms
+2026-07-19 13:42:35.522 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - null null
+2026-07-19 13:42:35.524 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:42:35.525 +05:30 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:36.440 +05:30 [ERR] Error getting recent messages
+System.InvalidCastException: Unable to cast object of type 'System.Boolean' to type 'System.DateTime'.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at Portfolio_Management_System.DAL.DbHelper.GetRecentMessagesAsync(Int32 count) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 1441
+2026-07-19 13:42:39.359 +05:30 [INF] Executing ViewResult, running view Dashboard.
+2026-07-19 13:42:39.571 +05:30 [INF] Executed ViewResult - view Dashboard executed in 211.6545ms.
+2026-07-19 13:42:39.571 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System) in 4046.4864ms
+2026-07-19 13:42:39.571 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:42:39.571 +05:30 [INF] HTTP GET /Admin/Dashboard responded 200 in 4048.7148 ms
+2026-07-19 13:42:39.572 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - 200 null text/html; charset=utf-8 4049.1727ms
+2026-07-19 13:42:39.660 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653595703305 - null null
+2026-07-19 13:42:39.661 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:42:39.675 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.4365 ms
+2026-07-19 13:42:39.675 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653595703305 - 200 19965 text/css 15.5105ms
+2026-07-19 13:42:39.810 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:42:39.811 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:42:39.811 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:39.821 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:42:39.822 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:42:39.822 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:39.824 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - null null
+2026-07-19 13:42:39.824 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:42:39.824 +05:30 [INF] Route matched with {action = "GetExperienceDetails", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetExperienceDetails() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:40.026 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:42:40.027 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 204.2103ms
+2026-07-19 13:42:40.027 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:42:40.027 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 206.0537 ms
+2026-07-19 13:42:40.027 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType20`10[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-19 13:42:40.027 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 206.4417ms
+2026-07-19 13:42:40.027 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System) in 203.0306ms
+2026-07-19 13:42:40.027 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:42:40.027 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:42:40.027 +05:30 [INF] HTTP GET /Admin/GetExperienceDetails responded 200 in 203.7819 ms
+2026-07-19 13:42:40.028 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - 200 null application/json; charset=utf-8 204.0924ms
+2026-07-19 13:42:40.037 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 225.8228ms
+2026-07-19 13:42:40.037 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:42:40.042 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 232.2232 ms
+2026-07-19 13:42:40.042 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 232.7121ms
+2026-07-19 13:42:41.628 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:42:41.628 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:42:41.629 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.5158 ms
+2026-07-19 13:42:41.629 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.7681ms
+2026-07-19 13:42:56.088 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:42:56.088 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:42:56.089 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:42:56.626 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:42:56.641 +05:30 [INF] Executed ViewResult - view Login executed in 15.6511ms.
+2026-07-19 13:42:56.642 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 553.0441ms
+2026-07-19 13:42:56.642 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:42:56.642 +05:30 [INF] Session started; Key:2f6f9ad9-d6bc-0be2-5f66-49548480479b, Id:8da22977-6542-cbd6-3da3-15a9ce2a75cf
+2026-07-19 13:42:56.642 +05:30 [INF] HTTP GET /Admin/Login responded 200 in 554.2604 ms
+2026-07-19 13:42:56.642 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 554.4877ms
+2026-07-19 13:42:56.784 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653766278085 - null null
+2026-07-19 13:42:56.786 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:42:56.786 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.5916 ms
+2026-07-19 13:42:56.786 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200653766278085 - 200 19965 text/css 2.1351ms
+2026-07-19 13:42:59.824 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:42:59.824 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:42:59.824 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.3720 ms
+2026-07-19 13:42:59.824 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.6034ms
+2026-07-19 13:43:09.788 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:43:09.788 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:43:09.788 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:09.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:43:09.789 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:43:09.790 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:10.139 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:43:10.139 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 349.7951ms
+2026-07-19 13:43:10.140 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:43:10.140 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 350.4800 ms
+2026-07-19 13:43:10.140 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 350.7388ms
+2026-07-19 13:43:10.140 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:43:10.140 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 352.0817ms
+2026-07-19 13:43:10.141 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:43:10.141 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 353.0308 ms
+2026-07-19 13:43:10.141 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 353.2717ms
+2026-07-19 13:43:40.043 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:43:40.043 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:43:40.043 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:40.143 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:43:40.149 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:43:40.150 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:40.240 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:43:40.241 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 197.2061ms
+2026-07-19 13:43:40.241 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:43:40.241 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 198.1102 ms
+2026-07-19 13:43:40.241 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 198.4893ms
+2026-07-19 13:43:40.390 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:43:40.391 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 241.0948ms
+2026-07-19 13:43:40.391 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:43:40.391 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 247.2868 ms
+2026-07-19 13:43:40.391 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 247.4836ms
+2026-07-19 13:43:45.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:43:45.738 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:43:45.741 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:46.226 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:43:46.241 +05:30 [INF] Executed ViewResult - view Login executed in 15.0545ms.
+2026-07-19 13:43:46.241 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 500.5486ms
+2026-07-19 13:43:46.241 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:43:46.241 +05:30 [INF] HTTP GET /Admin/Login responded 200 in 503.9101 ms
+2026-07-19 13:43:46.242 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 504.1609ms
+2026-07-19 13:43:46.369 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654262342494 - null null
+2026-07-19 13:43:46.393 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:43:46.393 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 24.2552 ms
+2026-07-19 13:43:46.393 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654262342494 - 200 19965 text/css 24.7746ms
+2026-07-19 13:43:46.943 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:43:46.943 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:43:46.948 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:47.766 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/Dashboard.
+2026-07-19 13:43:47.767 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 816.877ms
+2026-07-19 13:43:47.767 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:43:47.767 +05:30 [INF] HTTP GET /Admin/Login responded 302 in 823.4334 ms
+2026-07-19 13:43:47.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 302 0 null 824.0028ms
+2026-07-19 13:43:47.817 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - null null
+2026-07-19 13:43:47.818 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:43:47.819 +05:30 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:48.787 +05:30 [ERR] Error getting recent messages
+System.InvalidCastException: Unable to cast object of type 'System.Boolean' to type 'System.DateTime'.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at Portfolio_Management_System.DAL.DbHelper.GetRecentMessagesAsync(Int32 count) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 1441
+2026-07-19 13:43:49.820 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:43:49.821 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:43:49.821 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4259 ms
+2026-07-19 13:43:49.821 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.6282ms
+2026-07-19 13:43:51.152 +05:30 [INF] Executing ViewResult, running view Dashboard.
+2026-07-19 13:43:51.350 +05:30 [INF] Executed ViewResult - view Dashboard executed in 198.5064ms.
+2026-07-19 13:43:51.350 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System) in 3531.1473ms
+2026-07-19 13:43:51.350 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:43:51.354 +05:30 [INF] HTTP GET /Admin/Dashboard responded 200 in 3537.0211 ms
+2026-07-19 13:43:51.354 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - 200 null text/html; charset=utf-8 3537.2851ms
+2026-07-19 13:43:51.453 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654313498577 - null null
+2026-07-19 13:43:51.457 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:43:51.457 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 4.5078 ms
+2026-07-19 13:43:51.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654313498577 - 200 19965 text/css 4.7067ms
+2026-07-19 13:43:51.966 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:43:51.967 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:43:51.967 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:52.068 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:43:52.068 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:43:52.068 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:52.092 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - null null
+2026-07-19 13:43:52.092 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:43:52.092 +05:30 [INF] Route matched with {action = "GetExperienceDetails", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetExperienceDetails() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:43:52.376 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:43:52.376 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 308.1372ms
+2026-07-19 13:43:52.377 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:43:52.377 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 308.7290 ms
+2026-07-19 13:43:52.377 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 308.9329ms
+2026-07-19 13:43:52.634 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:43:52.634 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 667.1723ms
+2026-07-19 13:43:52.634 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:43:52.634 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 667.8566 ms
+2026-07-19 13:43:52.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 668.0642ms
+2026-07-19 13:43:52.881 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType20`10[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-19 13:43:52.881 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System) in 788.7826ms
+2026-07-19 13:43:52.881 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:43:52.881 +05:30 [INF] HTTP GET /Admin/GetExperienceDetails responded 200 in 789.4139 ms
+2026-07-19 13:43:52.881 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - 200 null application/json; charset=utf-8 789.6072ms
+2026-07-19 13:43:54.000 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:43:54.001 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:43:54.001 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4767 ms
+2026-07-19 13:43:54.001 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.7671ms
+2026-07-19 13:44:10.088 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:44:10.089 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:10.089 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:10.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:44:10.150 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:10.150 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:10.301 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:44:10.301 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 212.4739ms
+2026-07-19 13:44:10.301 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:10.301 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 213.3843 ms
+2026-07-19 13:44:10.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 213.5951ms
+2026-07-19 13:44:10.341 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:44:10.342 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 191.364ms
+2026-07-19 13:44:10.342 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:10.342 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 192.2393 ms
+2026-07-19 13:44:10.342 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 192.4321ms
+2026-07-19 13:44:14.490 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:44:14.491 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:44:14.491 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:14.954 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:44:14.957 +05:30 [INF] Executed ViewResult - view Login executed in 3.1813ms.
+2026-07-19 13:44:14.957 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 466.0887ms
+2026-07-19 13:44:14.957 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:44:14.957 +05:30 [INF] HTTP GET /Admin/Login responded 200 in 466.6622 ms
+2026-07-19 13:44:14.957 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 466.8684ms
+2026-07-19 13:44:15.068 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654549552138 - null null
+2026-07-19 13:44:15.070 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:44:15.071 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.2257 ms
+2026-07-19 13:44:15.071 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654549552138 - 200 19965 text/css 2.4196ms
+2026-07-19 13:44:16.772 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:44:16.772 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:44:16.772 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4312 ms
+2026-07-19 13:44:16.773 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.6446ms
+2026-07-19 13:44:22.237 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:44:22.237 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:22.237 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:22.358 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:44:22.359 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:22.359 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:22.898 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:44:22.901 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 541.9453ms
+2026-07-19 13:44:22.901 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:22.901 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 542.9071 ms
+2026-07-19 13:44:22.901 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 543.1902ms
+2026-07-19 13:44:22.987 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:44:22.987 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 749.5437ms
+2026-07-19 13:44:22.987 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:22.987 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 750.0841 ms
+2026-07-19 13:44:22.987 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 750.2981ms
+2026-07-19 13:44:28.205 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - null null
+2026-07-19 13:44:28.206 +05:30 [INF] The file /css/site.css was not modified
+2026-07-19 13:44:28.206 +05:30 [INF] HTTP GET /css/site.css responded 304 in 0.5858 ms
+2026-07-19 13:44:28.206 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - 304 null text/css 0.8911ms
+2026-07-19 13:44:30.820 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:44:30.821 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:44:30.821 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:31.691 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:44:31.699 +05:30 [INF] Executed ViewResult - view Login executed in 7.5158ms.
+2026-07-19 13:44:31.699 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 877.9982ms
+2026-07-19 13:44:31.699 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:44:31.700 +05:30 [INF] HTTP GET /Admin/Login responded 200 in 879.7128 ms
+2026-07-19 13:44:31.700 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 880.0664ms
+2026-07-19 13:44:31.830 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654716921024 - null null
+2026-07-19 13:44:31.831 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:44:31.831 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.2557 ms
+2026-07-19 13:44:31.832 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200654716921024 - 200 19965 text/css 1.4563ms
+2026-07-19 13:44:33.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:44:33.515 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:44:33.515 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.8835 ms
+2026-07-19 13:44:33.515 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 1.4067ms
+2026-07-19 13:44:40.067 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:44:40.068 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:40.068 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:40.295 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:44:40.296 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 227.6842ms
+2026-07-19 13:44:40.296 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:40.296 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 228.8745 ms
+2026-07-19 13:44:40.296 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 229.1264ms
+2026-07-19 13:44:40.572 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:44:40.572 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:40.572 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:40.804 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:44:40.804 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 231.9102ms
+2026-07-19 13:44:40.804 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:40.804 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 232.5450 ms
+2026-07-19 13:44:40.804 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 232.762ms
+2026-07-19 13:44:52.103 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:44:52.104 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:52.104 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:52.159 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:44:52.160 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:52.160 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:44:52.431 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:44:52.431 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:44:52.432 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 327.887ms
+2026-07-19 13:44:52.432 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 271.7652ms
+2026-07-19 13:44:52.432 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:44:52.432 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:44:52.432 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 272.2856 ms
+2026-07-19 13:44:52.432 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 328.3978 ms
+2026-07-19 13:44:52.432 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 272.4996ms
+2026-07-19 13:44:52.432 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 328.6601ms
+2026-07-19 13:45:10.041 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:45:10.044 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:10.044 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:10.047 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:45:10.047 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:10.047 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:10.247 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:45:10.250 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 206.4033ms
+2026-07-19 13:45:10.250 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:10.251 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 207.2815 ms
+2026-07-19 13:45:10.251 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 209.8827ms
+2026-07-19 13:45:10.251 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:45:10.251 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 203.7146ms
+2026-07-19 13:45:10.251 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:10.251 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 204.3283 ms
+2026-07-19 13:45:10.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 204.5393ms
+2026-07-19 13:45:13.119 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5049/Admin/Login - application/x-www-form-urlencoded 235
+2026-07-19 13:45:13.120 +05:30 [INF] CORS policy execution successful.
+2026-07-19 13:45:13.120 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:45:13.120 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Portfolio_Management_System.Models.AdminLoginModel) on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:13.324 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:45:13.336 +05:30 [INF] Executed ViewResult - view Login executed in 11.9098ms.
+2026-07-19 13:45:13.336 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 216.2985ms
+2026-07-19 13:45:13.337 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:45:13.337 +05:30 [INF] HTTP POST /Admin/Login responded 200 in 217.6629 ms
+2026-07-19 13:45:13.337 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 218.0577ms
+2026-07-19 13:45:13.484 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655133318460 - null null
+2026-07-19 13:45:13.485 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:45:13.485 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.5280 ms
+2026-07-19 13:45:13.485 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655133318460 - 200 19965 text/css 1.7532ms
+2026-07-19 13:45:15.872 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:45:15.872 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:45:15.872 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.3749 ms
+2026-07-19 13:45:15.873 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.7106ms
+2026-07-19 13:45:22.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:45:22.039 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:22.039 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:22.044 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:45:22.044 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:22.044 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:22.278 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:45:22.278 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:45:22.278 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 238.5655ms
+2026-07-19 13:45:22.278 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:22.278 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 233.8352ms
+2026-07-19 13:45:22.278 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:22.278 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 234.2442 ms
+2026-07-19 13:45:22.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 234.4236ms
+2026-07-19 13:45:22.278 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 239.0510 ms
+2026-07-19 13:45:22.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 239.4671ms
+2026-07-19 13:45:39.921 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5049/Admin/Login - application/x-www-form-urlencoded 215
+2026-07-19 13:45:39.921 +05:30 [INF] CORS policy execution successful.
+2026-07-19 13:45:39.921 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:45:39.928 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Portfolio_Management_System.Models.AdminLoginModel) on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:40.170 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:45:40.172 +05:30 [INF] Executed ViewResult - view Login executed in 1.4809ms.
+2026-07-19 13:45:40.172 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 243.5419ms
+2026-07-19 13:45:40.172 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:45:40.172 +05:30 [INF] HTTP POST /Admin/Login responded 200 in 250.8774 ms
+2026-07-19 13:45:40.172 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 251.1207ms
+2026-07-19 13:45:40.265 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655401708728 - null null
+2026-07-19 13:45:40.267 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:45:40.267 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.4477 ms
+2026-07-19 13:45:40.267 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655401708728 - 200 19965 text/css 1.6725ms
+2026-07-19 13:45:40.382 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:45:40.382 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:40.382 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:40.403 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:45:40.404 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:40.404 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:41.118 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:45:41.119 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 714.9075ms
+2026-07-19 13:45:41.119 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:41.119 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 715.3649 ms
+2026-07-19 13:45:41.119 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 715.5864ms
+2026-07-19 13:45:42.817 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:45:42.817 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:45:42.817 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4088 ms
+2026-07-19 13:45:42.818 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.6104ms
+2026-07-19 13:45:46.188 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:45:46.189 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 5806.3872ms
+2026-07-19 13:45:46.189 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:46.189 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 5806.8964 ms
+2026-07-19 13:45:46.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 5807.1605ms
+2026-07-19 13:45:52.038 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:45:52.038 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:52.038 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:45:52.038 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:52.039 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:52.039 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:52.281 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:45:52.282 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 243.2271ms
+2026-07-19 13:45:52.282 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:45:52.282 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:45:52.282 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 244.1206 ms
+2026-07-19 13:45:52.282 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 244.2897ms
+2026-07-19 13:45:52.282 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 243.7188ms
+2026-07-19 13:45:52.282 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:45:52.283 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 244.1084 ms
+2026-07-19 13:45:52.283 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 244.2286ms
+2026-07-19 13:45:54.225 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:45:54.226 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:45:54.226 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:45:54.689 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:45:54.695 +05:30 [INF] Executed ViewResult - view Login executed in 6.1552ms.
+2026-07-19 13:45:54.695 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 469.7815ms
+2026-07-19 13:45:54.696 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:45:54.696 +05:30 [INF] HTTP GET /Admin/Login responded 200 in 470.8995 ms
+2026-07-19 13:45:54.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 471.2196ms
+2026-07-19 13:45:54.814 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655546899387 - null null
+2026-07-19 13:45:54.816 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:45:54.816 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.7088 ms
+2026-07-19 13:45:54.816 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655546899387 - 200 19965 text/css 2.125ms
+2026-07-19 13:45:56.519 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:45:56.519 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:45:56.520 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.3005 ms
+2026-07-19 13:45:56.520 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.4657ms
+2026-07-19 13:46:13.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Login - null null
+2026-07-19 13:46:13.253 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:46:13.253 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:13.788 +05:30 [INF] Executing ViewResult, running view Login.
+2026-07-19 13:46:13.790 +05:30 [INF] Executed ViewResult - view Login executed in 2.4769ms.
+2026-07-19 13:46:13.791 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 537.6697ms
+2026-07-19 13:46:13.791 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:46:13.791 +05:30 [INF] HTTP GET /Admin/Login responded 200 in 538.5995 ms
+2026-07-19 13:46:13.791 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Login - 200 null text/html; charset=utf-8 538.8613ms
+2026-07-19 13:46:13.905 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655737884960 - null null
+2026-07-19 13:46:13.910 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:46:13.910 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 5.5599 ms
+2026-07-19 13:46:13.910 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655737884960 - 200 19965 text/css 5.7413ms
+2026-07-19 13:46:15.577 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:46:15.579 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:46:15.579 +05:30 [INF] HTTP GET /sw.js responded 304 in 2.3885 ms
+2026-07-19 13:46:15.579 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 2.6809ms
+2026-07-19 13:46:19.714 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5049/Admin/Login - application/x-www-form-urlencoded 217
+2026-07-19 13:46:19.714 +05:30 [INF] CORS policy execution successful.
+2026-07-19 13:46:19.714 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:46:19.714 +05:30 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Portfolio_Management_System.Models.AdminLoginModel) on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:19.932 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/Dashboard.
+2026-07-19 13:46:19.932 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System) in 218.1151ms
+2026-07-19 13:46:19.933 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Login (Portfolio Management System)'
+2026-07-19 13:46:19.933 +05:30 [INF] HTTP POST /Admin/Login responded 302 in 218.8449 ms
+2026-07-19 13:46:19.933 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5049/Admin/Login - 302 0 null 219.1701ms
+2026-07-19 13:46:20.037 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - null null
+2026-07-19 13:46:20.037 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:46:20.037 +05:30 [INF] Route matched with {action = "Dashboard", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Dashboard() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:21.832 +05:30 [ERR] Error getting recent messages
+System.InvalidCastException: Unable to cast object of type 'System.Boolean' to type 'System.DateTime'.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at Portfolio_Management_System.DAL.DbHelper.GetRecentMessagesAsync(Int32 count) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 1441
+2026-07-19 13:46:22.125 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:46:22.125 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:22.126 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:22.126 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:46:22.127 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:22.127 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:22.387 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:46:22.387 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 261.6865ms
+2026-07-19 13:46:22.387 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:22.387 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 262.2283 ms
+2026-07-19 13:46:22.388 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 262.4415ms
+2026-07-19 13:46:23.731 +05:30 [INF] Executing ViewResult, running view Dashboard.
+2026-07-19 13:46:23.984 +05:30 [INF] Executed ViewResult - view Dashboard executed in 253.4308ms.
+2026-07-19 13:46:23.984 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System) in 3946.8085ms
+2026-07-19 13:46:23.984 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Dashboard (Portfolio Management System)'
+2026-07-19 13:46:23.984 +05:30 [INF] HTTP GET /Admin/Dashboard responded 200 in 3947.2145 ms
+2026-07-19 13:46:23.984 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Dashboard - 200 null text/html; charset=utf-8 3947.4266ms
+2026-07-19 13:46:24.141 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655839835967 - null null
+2026-07-19 13:46:24.142 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:46:24.143 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 1.1718 ms
+2026-07-19 13:46:24.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200655839835967 - 200 19965 text/css 1.4044ms
+2026-07-19 13:46:24.749 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:46:24.750 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 2622.9365ms
+2026-07-19 13:46:24.750 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:24.750 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 2623.3872 ms
+2026-07-19 13:46:24.750 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 2623.5618ms
+2026-07-19 13:46:24.938 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:46:24.939 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:24.940 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:25.018 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:46:25.019 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:25.019 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:25.125 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - null null
+2026-07-19 13:46:25.125 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:46:25.126 +05:30 [INF] Route matched with {action = "GetExperienceDetails", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetExperienceDetails() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:25.160 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:46:25.160 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 220.3168ms
+2026-07-19 13:46:25.160 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:25.160 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 222.1443 ms
+2026-07-19 13:46:25.161 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 222.2941ms
+2026-07-19 13:46:25.267 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:46:25.267 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 248.3798ms
+2026-07-19 13:46:25.267 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:25.267 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 248.8551 ms
+2026-07-19 13:46:25.267 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 249.0319ms
+2026-07-19 13:46:25.413 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType20`10[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-19 13:46:25.413 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System) in 287.6575ms
+2026-07-19 13:46:25.413 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:46:25.413 +05:30 [INF] HTTP GET /Admin/GetExperienceDetails responded 200 in 288.2977 ms
+2026-07-19 13:46:25.413 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - 200 null application/json; charset=utf-8 288.5847ms
+2026-07-19 13:46:28.141 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:46:28.141 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:46:28.141 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.3183 ms
+2026-07-19 13:46:28.141 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.484ms
+2026-07-19 13:46:32.615 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:46:32.615 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:46:32.615 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.2823 ms
+2026-07-19 13:46:32.615 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.4551ms
+2026-07-19 13:46:41.175 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:46:41.175 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:41.175 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:41.236 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:46:41.236 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:41.236 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:41.381 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:46:41.381 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 206.127ms
+2026-07-19 13:46:41.381 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:41.382 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 206.6297 ms
+2026-07-19 13:46:41.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 206.8268ms
+2026-07-19 13:46:41.847 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:46:41.847 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 611.0417ms
+2026-07-19 13:46:41.847 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:41.848 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 611.5047 ms
+2026-07-19 13:46:41.848 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 611.6853ms
+2026-07-19 13:46:43.717 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:46:43.718 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:46:43.718 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.3436 ms
+2026-07-19 13:46:43.718 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.5148ms
+2026-07-19 13:46:52.031 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:46:52.032 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:52.032 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:46:52.032 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:52.032 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:52.032 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:52.286 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:46:52.286 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 254.6853ms
+2026-07-19 13:46:52.287 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:52.287 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 255.5235 ms
+2026-07-19 13:46:52.287 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 255.6986ms
+2026-07-19 13:46:52.287 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:46:52.287 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 254.9042ms
+2026-07-19 13:46:52.287 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:52.287 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 255.3021 ms
+2026-07-19 13:46:52.287 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 255.4313ms
+2026-07-19 13:46:54.961 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:46:54.962 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:54.962 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:55.020 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:46:55.020 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:55.021 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:46:55.160 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:46:55.160 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 198.2352ms
+2026-07-19 13:46:55.160 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:46:55.160 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 198.7723 ms
+2026-07-19 13:46:55.160 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 199.0088ms
+2026-07-19 13:46:55.624 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:46:55.624 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 601.2269ms
+2026-07-19 13:46:55.624 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:46:55.624 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 604.3550 ms
+2026-07-19 13:46:55.625 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 604.5716ms
+2026-07-19 13:47:13.949 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/Skills - null null
+2026-07-19 13:47:13.964 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.Skills (Portfolio Management System)'
+2026-07-19 13:47:14.007 +05:30 [INF] Route matched with {action = "Skills", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Skills() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:14.827 +05:30 [INF] Executing ViewResult, running view Skills.
+2026-07-19 13:47:15.126 +05:30 [INF] Executed ViewResult - view Skills executed in 307.6562ms.
+2026-07-19 13:47:15.127 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.Skills (Portfolio Management System) in 1119.2717ms
+2026-07-19 13:47:15.127 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.Skills (Portfolio Management System)'
+2026-07-19 13:47:15.127 +05:30 [INF] HTTP GET /Admin/Skills responded 200 in 1177.3211 ms
+2026-07-19 13:47:15.127 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/Skills - 200 null text/html; charset=utf-8 1177.8281ms
+2026-07-19 13:47:15.263 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200656351246280 - null null
+2026-07-19 13:47:15.265 +05:30 [INF] Sending file. Request path: '/css/admin.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\admin.css'
+2026-07-19 13:47:15.265 +05:30 [INF] HTTP GET /css/admin.css responded 200 in 2.0256 ms
+2026-07-19 13:47:15.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/admin.css?v=639200656351246280 - 200 19965 text/css 2.2007ms
+2026-07-19 13:47:15.396 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:47:15.396 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:47:15.396 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:15.462 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:47:15.462 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:47:15.462 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:15.584 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:47:15.584 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 187.6874ms
+2026-07-19 13:47:15.584 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:47:15.584 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 188.1436 ms
+2026-07-19 13:47:15.584 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 188.3594ms
+2026-07-19 13:47:15.692 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:47:15.693 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 230.7385ms
+2026-07-19 13:47:15.693 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:47:15.693 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 231.2910 ms
+2026-07-19 13:47:15.693 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 231.4814ms
+2026-07-19 13:47:17.947 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-19 13:47:17.948 +05:30 [INF] The file /sw.js was not modified
+2026-07-19 13:47:17.948 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.3501 ms
+2026-07-19 13:47:17.948 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.5556ms
+2026-07-19 13:47:40.049 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - null null
+2026-07-19 13:47:40.049 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:47:40.049 +05:30 [INF] Route matched with {action = "GetExperienceDetails", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetExperienceDetails() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:40.269 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType20`10[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-19 13:47:40.269 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System) in 220.1776ms
+2026-07-19 13:47:40.269 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetExperienceDetails (Portfolio Management System)'
+2026-07-19 13:47:40.269 +05:30 [INF] HTTP GET /Admin/GetExperienceDetails responded 200 in 220.6597 ms
+2026-07-19 13:47:40.269 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetExperienceDetails - 200 null application/json; charset=utf-8 220.8572ms
+2026-07-19 13:47:41.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:47:41.042 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:47:41.042 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:41.086 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:47:41.086 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:47:41.086 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:41.337 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:47:41.337 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:47:41.337 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 294.8723ms
+2026-07-19 13:47:41.337 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 250.9592ms
+2026-07-19 13:47:41.337 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:47:41.337 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:47:41.337 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 251.6274 ms
+2026-07-19 13:47:41.337 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 295.2455 ms
+2026-07-19 13:47:41.337 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 251.7675ms
+2026-07-19 13:47:41.337 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 295.4138ms
+2026-07-19 13:47:41.343 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - null null
+2026-07-19 13:47:41.343 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:47:41.343 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - null null
+2026-07-19 13:47:41.343 +05:30 [INF] Route matched with {action = "GetUnreadMessagesCount", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUnreadMessagesCount() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:41.344 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:47:41.344 +05:30 [INF] Route matched with {action = "GetRecentMessages", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecentMessages() on controller Portfolio_Management_System.Controllers.AdminController (Portfolio Management System).
+2026-07-19 13:47:41.644 +05:30 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2026-07-19 13:47:41.644 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System) in 301.0046ms
+2026-07-19 13:47:41.644 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetUnreadMessagesCount (Portfolio Management System)'
+2026-07-19 13:47:41.644 +05:30 [INF] HTTP GET /Admin/GetUnreadMessagesCount responded 200 in 301.5063 ms
+2026-07-19 13:47:41.644 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetUnreadMessagesCount - 200 null application/json; charset=utf-8 301.6733ms
+2026-07-19 13:47:41.647 +05:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType23`7[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Portfolio Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-19 13:47:41.647 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System) in 303.4761ms
+2026-07-19 13:47:41.647 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.AdminController.GetRecentMessages (Portfolio Management System)'
+2026-07-19 13:47:41.647 +05:30 [INF] HTTP GET /Admin/GetRecentMessages responded 200 in 304.0262 ms
+2026-07-19 13:47:41.647 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Admin/GetRecentMessages - 200 null application/json; charset=utf-8 304.3381ms

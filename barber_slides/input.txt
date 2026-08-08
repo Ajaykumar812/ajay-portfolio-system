@@ -1,0 +1,5 @@
+file 'c:/Users/ak731/Desktop/DSA/Portfolio Management System/barber_slides/segment_0.mp4'
+file 'c:/Users/ak731/Desktop/DSA/Portfolio Management System/barber_slides/segment_1.mp4'
+file 'c:/Users/ak731/Desktop/DSA/Portfolio Management System/barber_slides/segment_2.mp4'
+file 'c:/Users/ak731/Desktop/DSA/Portfolio Management System/barber_slides/segment_3.mp4'
+file 'c:/Users/ak731/Desktop/DSA/Portfolio Management System/barber_slides/segment_4.mp4'

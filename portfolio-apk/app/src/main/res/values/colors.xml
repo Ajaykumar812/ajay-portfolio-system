@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0A0E1A</color>
+    <color name="bg_card">#111827</color>
+    <color name="cyan_primary">#00D4FF</color>
+    <color name="cyan_light">#67E8F9</color>
+    <color name="purple_accent">#8B5CF6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="splash_bg">#0A0E1A</color>
+</resources>

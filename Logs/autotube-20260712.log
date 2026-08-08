@@ -1,0 +1,619 @@
+2026-07-12 23:12:19.102 +05:30 [WRN] JWT SecretKey missing in configuration. JWT Auth not configured.
+2026-07-12 23:12:24.157 +05:30 [INF] Executed DbCommand (201ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:12:24.171 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-12 23:12:24.393 +05:30 [INF] Executed DbCommand (216ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-12 23:12:24.901 +05:30 [INF] Executed DbCommand (214ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-12 23:12:25.862 +05:30 [INF] Executed DbCommand (215ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:12:26.102 +05:30 [INF] Executed DbCommand (238ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-12 23:12:26.305 +05:30 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-12 23:12:26.318 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-07-12 23:12:26.740 +05:30 [INF] Executed DbCommand (207ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-12 23:12:26.748 +05:30 [INF] Initializing AKTU multi-university portal database schema...
+2026-07-12 23:12:35.709 +05:30 [INF] Database tables initialized/verified successfully.
+2026-07-12 23:12:35.713 +05:30 [INF] Fetching Indian universities from API...
+2026-07-12 23:12:37.046 +05:30 [INF] Loaded 475 universities from API. Syncing with database...
+2026-07-12 23:12:37.514 +05:30 [INF] Successfully inserted 0 new universities from API.
+2026-07-12 23:12:38.771 +05:30 [INF] Using uvicorn executable: "C:\Users\ak731\Desktop\DSA\Portfolio Management System\venv\Scripts\uvicorn.exe"
+2026-07-12 23:12:38.943 +05:30 [INF] Started Python AI Server automatically at C:\Users\ak731\Desktop\DSA\Portfolio Management System\AutoTube\AutoTube.AI (using venv if available).
+2026-07-12 23:12:44.498 +05:30 [INF] Python AI Server health check passed.
+2026-07-12 23:12:44.498 +05:30 [INF] Unified API starting on Development
+2026-07-12 23:12:44.531 +05:30 [INF] User profile is available. Using 'C:\Users\ak731\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-12 23:12:44.553 +05:30 [INF] Gallery Auto-Uploader Background Service started.
+2026-07-12 23:12:44.574 +05:30 [INF] Start processing HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:12:44.580 +05:30 [INF] Sending HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:12:44.819 +05:30 [INF] AutoTube Video Automation Background Scheduler started. Scheduled for 9:00 AM daily.
+2026-07-12 23:12:44.820 +05:30 [INF] Next video generation cycle scheduled at "2026-07-13T09:00:00.0000000" (in 9.79 hours).
+2026-07-12 23:12:44.885 +05:30 [INF] Now listening on: http://localhost:5049
+2026-07-12 23:12:44.885 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-12 23:12:44.886 +05:30 [INF] Hosting environment: Development
+2026-07-12 23:12:44.886 +05:30 [INF] Content root path: C:\Users\ak731\Desktop\DSA\Portfolio Management System
+2026-07-12 23:12:44.930 +05:30 [INF] Received HTTP response headers after 340.9791ms - 404
+2026-07-12 23:12:44.936 +05:30 [INF] End processing HTTP request after 371.4347ms - 404
+2026-07-12 23:12:45.619 +05:30 [INF] Daily AI Generated Video upload complete: C++ Templates & OOP - Daily AI Tutorial [Copyright-Free]
+2026-07-12 23:13:59.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/ - null null
+2026-07-12 23:13:59.823 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-12 23:13:59.898 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-12 23:13:59.930 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-12 23:14:00.528 +05:30 [ERR] Error tracking page visit for URL /
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:1c62b1ff-cc57-44ca-8858-2490f7a93f00
+Error Number:207,State:1,Class:16
+2026-07-12 23:14:02.079 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-12 23:14:08.278 +05:30 [INF] Executed ViewResult - view Index executed in 6193.5344ms.
+2026-07-12 23:14:08.296 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System) in 8364.2057ms
+2026-07-12 23:14:08.300 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-12 23:14:08.310 +05:30 [INF] Session started; Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0, Id:4f3bfd47-44aa-d14a-05c9-71e90d402c8f
+2026-07-12 23:14:08.319 +05:30 [INF] HTTP GET / responded 200 in 8562.1127 ms
+2026-07-12 23:14:08.349 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/ - 200 null text/html; charset=utf-8 8606.1224ms
+2026-07-12 23:14:08.382 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - null null
+2026-07-12 23:14:08.411 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\site.css'
+2026-07-12 23:14:08.412 +05:30 [INF] HTTP GET /css/site.css responded 200 in 28.8652 ms
+2026-07-12 23:14:08.412 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - 200 20411 text/css 29.6079ms
+2026-07-12 23:14:08.416 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/images/ajay-avatar.png - null null
+2026-07-12 23:14:08.419 +05:30 [INF] The file /images/ajay-avatar.png was not modified
+2026-07-12 23:14:08.419 +05:30 [INF] HTTP GET /images/ajay-avatar.png responded 304 in 3.1385 ms
+2026-07-12 23:14:08.419 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/images/ajay-avatar.png - 304 null image/png 3.5899ms
+2026-07-12 23:14:08.468 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-12 23:14:08.475 +05:30 [INF] Sending file. Request path: '/manifest.json'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\manifest.json'
+2026-07-12 23:14:08.475 +05:30 [INF] HTTP GET /manifest.json responded 200 in 7.1884 ms
+2026-07-12 23:14:08.475 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 200 301 application/json 7.5831ms
+2026-07-12 23:14:09.782 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:14:10.011 +05:30 [INF] Sending file. Request path: '/sw.js'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\sw.js'
+2026-07-12 23:14:10.011 +05:30 [INF] HTTP GET /sw.js responded 200 in 226.7687 ms
+2026-07-12 23:14:10.011 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 200 602 text/javascript 229.4222ms
+2026-07-12 23:14:10.717 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/ - null null
+2026-07-12 23:14:10.718 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css - null null
+2026-07-12 23:14:10.730 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-12 23:14:10.730 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-12 23:14:10.731 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\css\site.css'
+2026-07-12 23:14:10.731 +05:30 [INF] HTTP GET /css/site.css responded 200 in 13.2784 ms
+2026-07-12 23:14:10.732 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css - 200 20411 text/css 13.8739ms
+2026-07-12 23:14:10.779 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-12 23:14:10.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/lib/jquery/dist/jquery.min.js - null null
+2026-07-12 23:14:10.967 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-07-12 23:14:10.967 +05:30 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 187.3391 ms
+2026-07-12 23:14:10.967 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/lib/bootstrap/dist/css/bootstrap.min.css - 200 232803 text/css 187.7441ms
+2026-07-12 23:14:10.975 +05:30 [ERR] Error getting visitor by ID
+System.InvalidCastException: Unable to cast object of type 'System.DateTime' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at Portfolio_Management_System.DAL.DbHelper.GetVisitorByIdAsync(Int32 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2122
+2026-07-12 23:14:11.435 +05:30 [ERR] Error tracking page visit for URL /
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:1c62b1ff-cc57-44ca-8858-2490f7a93f00
+Error Number:207,State:1,Class:16
+2026-07-12 23:14:11.974 +05:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-07-12 23:14:11.974 +05:30 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 1104.8417 ms
+2026-07-12 23:14:11.974 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/lib/jquery/dist/jquery.min.js - 200 87533 text/javascript 1105.1015ms
+2026-07-12 23:14:12.778 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-12 23:14:18.964 +05:30 [INF] Executed ViewResult - view Index executed in 6186.1011ms.
+2026-07-12 23:14:18.967 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System) in 8236.9539ms
+2026-07-12 23:14:18.968 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.Index (Portfolio Management System)'
+2026-07-12 23:14:18.980 +05:30 [INF] HTTP GET / responded 200 in 8252.4955 ms
+2026-07-12 23:14:18.980 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/ - 200 null text/html; charset=utf-8 8263.0539ms
+2026-07-12 23:15:52.211 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5049/Home/AskAi - application/json 39
+2026-07-12 23:15:52.226 +05:30 [INF] CORS policy execution successful.
+2026-07-12 23:15:52.229 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.AskAi (Portfolio Management System)'
+2026-07-12 23:15:52.246 +05:30 [INF] Route matched with {action = "AskAi", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AskAi(AskAiRequest) on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-12 23:15:53.215 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType29`2[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-12 23:15:53.295 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.AskAi (Portfolio Management System) in 1048.944ms
+2026-07-12 23:15:53.295 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.AskAi (Portfolio Management System)'
+2026-07-12 23:15:53.295 +05:30 [INF] HTTP POST /Home/AskAi responded 200 in 1083.3685 ms
+2026-07-12 23:15:53.295 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5049/Home/AskAi - 200 null application/json; charset=utf-8 1083.8548ms
+2026-07-12 23:19:47.609 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5049/Home/BookMeeting - application/json 135
+2026-07-12 23:19:47.622 +05:30 [INF] CORS policy execution successful.
+2026-07-12 23:19:47.623 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.BookMeeting (Portfolio Management System)'
+2026-07-12 23:19:47.658 +05:30 [INF] Route matched with {action = "BookMeeting", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BookMeeting(Portfolio_Management_System.Models.MeetingBookingModel) on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-12 23:19:47.903 +05:30 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType9`2[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-12 23:19:47.906 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.BookMeeting (Portfolio Management System) in 248.1948ms
+2026-07-12 23:19:47.906 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.BookMeeting (Portfolio Management System)'
+2026-07-12 23:19:47.906 +05:30 [INF] HTTP POST /Home/BookMeeting responded 200 in 297.6432 ms
+2026-07-12 23:19:47.909 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5049/Home/BookMeeting - 200 null application/json; charset=utf-8 299.908ms
+2026-07-12 23:20:14.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Resume/Download - null null
+2026-07-12 23:20:14.053 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.ResumeController.Download (Portfolio Management System)'
+2026-07-12 23:20:14.072 +05:30 [INF] Route matched with {action = "Download", controller = "Resume"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Download() on controller Portfolio_Management_System.Controllers.ResumeController (Portfolio Management System).
+2026-07-12 23:20:14.082 +05:30 [INF] Accessing expired session, Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0
+2026-07-12 23:20:14.402 +05:30 [ERR] Error tracking page visit for URL /Resume/Download
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:363d3546-19af-419f-a3e4-d3ead0e02de9
+Error Number:207,State:1,Class:16
+2026-07-12 23:20:14.638 +05:30 [INF] Executing FileContentResult, sending file with download name 'deb7faec-a12e-4420-97ee-a071600d510f.pdf' ...
+2026-07-12 23:20:14.649 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.ResumeController.Download (Portfolio Management System) in 576.6827ms
+2026-07-12 23:20:14.649 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.ResumeController.Download (Portfolio Management System)'
+2026-07-12 23:20:14.649 +05:30 [INF] Session started; Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0, Id:438bedef-2817-b93b-8961-48e002641d3f
+2026-07-12 23:20:14.649 +05:30 [INF] HTTP GET /Resume/Download responded 200 in 596.4280 ms
+2026-07-12 23:20:14.650 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Resume/Download - 200 169284 application/pdf 596.7132ms
+2026-07-12 23:20:15.664 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:20:15.665 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:20:15.665 +05:30 [INF] HTTP GET /sw.js responded 304 in 1.5039 ms
+2026-07-12 23:20:15.666 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 1.8995ms
+2026-07-12 23:29:41.752 +05:30 [WRN] JWT SecretKey missing in configuration. JWT Auth not configured.
+2026-07-12 23:29:46.205 +05:30 [INF] Executed DbCommand (171ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:29:46.225 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-12 23:29:46.388 +05:30 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-12 23:29:46.844 +05:30 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-12 23:29:47.331 +05:30 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:29:47.486 +05:30 [INF] Executed DbCommand (155ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-12 23:29:47.647 +05:30 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-12 23:29:47.666 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-07-12 23:29:47.981 +05:30 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-12 23:29:47.993 +05:30 [INF] Initializing AKTU multi-university portal database schema...
+2026-07-12 23:29:50.200 +05:30 [INF] Database tables initialized/verified successfully.
+2026-07-12 23:29:50.204 +05:30 [INF] Fetching Indian universities from API...
+2026-07-12 23:29:51.417 +05:30 [INF] Loaded 475 universities from API. Syncing with database...
+2026-07-12 23:29:51.901 +05:30 [INF] Successfully inserted 0 new universities from API.
+2026-07-12 23:29:53.024 +05:30 [INF] Using uvicorn executable: "C:\Users\ak731\Desktop\DSA\Portfolio Management System\venv\Scripts\uvicorn.exe"
+2026-07-12 23:29:53.332 +05:30 [INF] Started Python AI Server automatically at C:\Users\ak731\Desktop\DSA\Portfolio Management System\AutoTube\AutoTube.AI (using venv if available).
+2026-07-12 23:29:59.402 +05:30 [INF] Python AI Server health check passed.
+2026-07-12 23:29:59.402 +05:30 [INF] Unified API starting on Development
+2026-07-12 23:29:59.436 +05:30 [INF] User profile is available. Using 'C:\Users\ak731\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-12 23:29:59.466 +05:30 [INF] Gallery Auto-Uploader Background Service started.
+2026-07-12 23:29:59.495 +05:30 [INF] Start processing HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:29:59.505 +05:30 [INF] Sending HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:29:59.532 +05:30 [INF] AutoTube Video Automation Background Scheduler started. Scheduled for 9:00 AM daily.
+2026-07-12 23:29:59.533 +05:30 [INF] Next video generation cycle scheduled at "2026-07-13T09:00:00.0000000" (in 9.50 hours).
+2026-07-12 23:29:59.629 +05:30 [INF] Now listening on: http://localhost:5049
+2026-07-12 23:29:59.629 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-12 23:29:59.629 +05:30 [INF] Hosting environment: Development
+2026-07-12 23:29:59.630 +05:30 [INF] Content root path: C:\Users\ak731\Desktop\DSA\Portfolio Management System
+2026-07-12 23:29:59.878 +05:30 [INF] Received HTTP response headers after 368.949ms - 404
+2026-07-12 23:29:59.882 +05:30 [INF] End processing HTTP request after 398.879ms - 404
+2026-07-12 23:30:00.705 +05:30 [INF] Daily AI Generated Video upload complete: HTML & CSS Layouts - Daily AI Tutorial [Copyright-Free]
+2026-07-12 23:30:12.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - null null
+2026-07-12 23:30:12.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-12 23:30:12.631 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-12 23:30:12.649 +05:30 [INF] The file /css/site.css was not modified
+2026-07-12 23:30:12.649 +05:30 [INF] The file /manifest.json was not modified
+2026-07-12 23:30:12.656 +05:30 [INF] HTTP GET /css/site.css responded 304 in 137.8123 ms
+2026-07-12 23:30:12.656 +05:30 [INF] HTTP GET /manifest.json responded 304 in 137.8286 ms
+2026-07-12 23:30:12.681 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 304 null application/json 170.407ms
+2026-07-12 23:30:12.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - 304 null text/css 170.406ms
+2026-07-12 23:30:15.717 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:30:15.731 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:30:15.732 +05:30 [INF] HTTP GET /sw.js responded 304 in 14.8956 ms
+2026-07-12 23:30:15.734 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 17.2962ms
+2026-07-12 23:36:33.982 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-12 23:36:33.983 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - null null
+2026-07-12 23:36:34.138 +05:30 [INF] The file /manifest.json was not modified
+2026-07-12 23:36:34.141 +05:30 [INF] The file /css/site.css was not modified
+2026-07-12 23:36:34.145 +05:30 [INF] HTTP GET /css/site.css responded 304 in 141.2379 ms
+2026-07-12 23:36:34.152 +05:30 [INF] HTTP GET /manifest.json responded 304 in 150.0186 ms
+2026-07-12 23:36:34.164 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 304 null application/json 191.8678ms
+2026-07-12 23:36:34.165 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - 304 null text/css 191.3514ms
+2026-07-12 23:36:36.387 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:36:36.391 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:36:36.391 +05:30 [INF] HTTP GET /sw.js responded 304 in 3.4348 ms
+2026-07-12 23:36:36.393 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 4.5902ms
+2026-07-12 23:37:11.621 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Blog - null null
+2026-07-12 23:37:12.269 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.BlogController.Index (Portfolio Management System)'
+2026-07-12 23:37:12.619 +05:30 [INF] Route matched with {action = "Index", controller = "Blog"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32], System.String, System.String, Int32) on controller Portfolio_Management_System.Controllers.BlogController (Portfolio Management System).
+2026-07-12 23:37:12.732 +05:30 [INF] Accessing expired session, Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0
+2026-07-12 23:37:14.002 +05:30 [ERR] Error tracking page visit for URL /Blog
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:18b81581-8543-4463-840e-6774cdf39891
+Error Number:207,State:1,Class:16
+2026-07-12 23:37:15.705 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-12 23:37:16.404 +05:30 [INF] Executed ViewResult - view Index executed in 699.4819ms.
+2026-07-12 23:37:16.416 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.BlogController.Index (Portfolio Management System) in 3795.4656ms
+2026-07-12 23:37:16.416 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.BlogController.Index (Portfolio Management System)'
+2026-07-12 23:37:16.426 +05:30 [INF] Session started; Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0, Id:cf6dc5b0-c5ff-e4d9-942b-55c6050ffab8
+2026-07-12 23:37:16.430 +05:30 [INF] HTTP GET /Blog responded 200 in 4808.8087 ms
+2026-07-12 23:37:16.455 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Blog - 200 null text/html; charset=utf-8 4832.9118ms
+2026-07-12 23:37:18.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:37:18.544 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:37:18.544 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.5895 ms
+2026-07-12 23:37:18.544 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 1.0559ms
+2026-07-12 23:37:28.266 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Gallery - null null
+2026-07-12 23:37:28.283 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System)'
+2026-07-12 23:37:28.296 +05:30 [INF] Route matched with {action = "Index", controller = "Gallery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String) on controller Portfolio_Management_System.Controllers.GalleryController (Portfolio Management System).
+2026-07-12 23:37:28.487 +05:30 [ERR] Error getting visitor by ID
+System.InvalidCastException: Unable to cast object of type 'System.DateTime' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetBoolean(Int32 i)
+   at Portfolio_Management_System.DAL.DbHelper.GetVisitorByIdAsync(Int32 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2122
+2026-07-12 23:37:28.801 +05:30 [ERR] Error tracking page visit for URL /Gallery
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:18b81581-8543-4463-840e-6774cdf39891
+Error Number:207,State:1,Class:16
+2026-07-12 23:37:29.614 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-12 23:37:29.860 +05:30 [INF] Executed ViewResult - view Index executed in 246.9219ms.
+2026-07-12 23:37:29.861 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System) in 1564.1908ms
+2026-07-12 23:37:29.861 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System)'
+2026-07-12 23:37:29.862 +05:30 [INF] HTTP GET /Gallery responded 200 in 1595.6095 ms
+2026-07-12 23:37:29.862 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Gallery - 200 null text/html; charset=utf-8 1596.0238ms
+2026-07-12 23:37:30.356 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/uploads/gallery/images/tech_artwork.png - null null
+2026-07-12 23:37:30.473 +05:30 [INF] Sending file. Request path: '/uploads/gallery/images/tech_artwork.png'. Physical path: 'C:\Users\ak731\Desktop\DSA\Portfolio Management System\wwwroot\uploads\gallery\images\tech_artwork.png'
+2026-07-12 23:37:30.473 +05:30 [INF] HTTP GET /uploads/gallery/images/tech_artwork.png responded 200 in 116.9562 ms
+2026-07-12 23:37:30.473 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/uploads/gallery/images/tech_artwork.png - 200 953616 image/png 117.2214ms
+2026-07-12 23:37:32.232 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:37:32.233 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:37:32.233 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.3492 ms
+2026-07-12 23:37:32.233 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.5941ms
+2026-07-12 23:37:43.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Gallery?type=image - null null
+2026-07-12 23:37:43.952 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System)'
+2026-07-12 23:37:43.953 +05:30 [INF] Route matched with {action = "Index", controller = "Gallery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String) on controller Portfolio_Management_System.Controllers.GalleryController (Portfolio Management System).
+2026-07-12 23:37:44.143 +05:30 [ERR] Error getting visitor by ID
+System.InvalidCastException: Unable to cast object of type 'System.DateTime' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Portfolio_Management_System.DAL.DbHelper.GetVisitorByIdAsync(Int32 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2122
+2026-07-12 23:37:44.478 +05:30 [ERR] Error tracking page visit for URL /Gallery?type=image
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:18b81581-8543-4463-840e-6774cdf39891
+Error Number:207,State:1,Class:16
+2026-07-12 23:37:44.801 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-12 23:37:44.959 +05:30 [INF] Executed ViewResult - view Index executed in 158.453ms.
+2026-07-12 23:37:44.959 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System) in 1006.3791ms
+2026-07-12 23:37:44.959 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System)'
+2026-07-12 23:37:44.959 +05:30 [INF] HTTP GET /Gallery responded 200 in 1014.9419 ms
+2026-07-12 23:37:44.960 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Gallery?type=image - 200 null text/html; charset=utf-8 1015.2488ms
+2026-07-12 23:37:46.913 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:37:46.917 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:37:46.917 +05:30 [INF] HTTP GET /sw.js responded 304 in 3.6137 ms
+2026-07-12 23:37:46.918 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 4.8679ms
+2026-07-12 23:37:51.299 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Gallery?type=document - null null
+2026-07-12 23:37:51.300 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System)'
+2026-07-12 23:37:51.300 +05:30 [INF] Route matched with {action = "Index", controller = "Gallery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String) on controller Portfolio_Management_System.Controllers.GalleryController (Portfolio Management System).
+2026-07-12 23:37:51.460 +05:30 [ERR] Error getting visitor by ID
+System.InvalidCastException: Unable to cast object of type 'System.DateTime' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Portfolio_Management_System.DAL.DbHelper.GetVisitorByIdAsync(Int32 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2122
+2026-07-12 23:37:51.776 +05:30 [ERR] Error tracking page visit for URL /Gallery?type=document
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:18b81581-8543-4463-840e-6774cdf39891
+Error Number:207,State:1,Class:16
+2026-07-12 23:37:52.098 +05:30 [INF] Executing ViewResult, running view Index.
+2026-07-12 23:37:52.259 +05:30 [INF] Executed ViewResult - view Index executed in 160.2361ms.
+2026-07-12 23:37:52.259 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System) in 958.233ms
+2026-07-12 23:37:52.259 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.GalleryController.Index (Portfolio Management System)'
+2026-07-12 23:37:52.261 +05:30 [INF] HTTP GET /Gallery responded 200 in 961.7975 ms
+2026-07-12 23:37:52.261 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Gallery?type=document - 200 null text/html; charset=utf-8 962.0721ms
+2026-07-12 23:37:54.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:37:54.084 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:37:54.084 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4630 ms
+2026-07-12 23:37:54.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.7513ms
+2026-07-12 23:37:55.711 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Gallery/Download/334 - null null
+2026-07-12 23:37:55.711 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.GalleryController.Download (Portfolio Management System)'
+2026-07-12 23:37:55.719 +05:30 [INF] Route matched with {action = "Download", controller = "Gallery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Download(Int32) on controller Portfolio_Management_System.Controllers.GalleryController (Portfolio Management System).
+2026-07-12 23:37:55.898 +05:30 [ERR] Error getting visitor by ID
+System.InvalidCastException: Unable to cast object of type 'System.DateTime' to type 'System.Boolean'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Boolean()
+   at Portfolio_Management_System.DAL.DbHelper.GetVisitorByIdAsync(Int32 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2122
+2026-07-12 23:37:56.211 +05:30 [ERR] Error tracking page visit for URL /Gallery/Download/334
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'IPAddress'.
+Invalid column name 'UserAgent'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__193_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Portfolio_Management_System.DAL.DbHelper.TrackPageVisitAsync(String url, String title, String ipAddress, String userAgent, Nullable`1 visitorId) in C:\Users\ak731\Desktop\DSA\Portfolio Management System\DAL\DbHelper.cs:line 2683
+ClientConnectionId:18b81581-8543-4463-840e-6774cdf39891
+Error Number:207,State:1,Class:16
+2026-07-12 23:37:56.543 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 404
+2026-07-12 23:37:56.544 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.GalleryController.Download (Portfolio Management System) in 824.9448ms
+2026-07-12 23:37:56.544 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.GalleryController.Download (Portfolio Management System)'
+2026-07-12 23:37:56.544 +05:30 [INF] HTTP GET /Gallery/Download/334 responded 404 in 833.1685 ms
+2026-07-12 23:37:56.544 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Gallery/Download/334 - 404 0 null 833.588ms
+2026-07-12 23:37:57.874 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:37:57.875 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:37:57.875 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4314 ms
+2026-07-12 23:37:57.875 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 0.7279ms
+2026-07-12 23:42:05.238 +05:30 [WRN] JWT SecretKey missing in configuration. JWT Auth not configured.
+2026-07-12 23:42:10.357 +05:30 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:42:10.393 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-12 23:42:10.594 +05:30 [INF] Executed DbCommand (184ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-12 23:42:11.129 +05:30 [INF] Executed DbCommand (154ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-12 23:42:11.613 +05:30 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:42:11.772 +05:30 [INF] Executed DbCommand (159ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-12 23:42:11.934 +05:30 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-12 23:42:11.959 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-07-12 23:42:12.271 +05:30 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-12 23:42:12.280 +05:30 [INF] Initializing AKTU multi-university portal database schema...
+2026-07-12 23:42:14.326 +05:30 [INF] Database tables initialized/verified successfully.
+2026-07-12 23:42:14.333 +05:30 [INF] Fetching Indian universities from API...
+2026-07-12 23:42:17.337 +05:30 [INF] Loaded 475 universities from API. Syncing with database...
+2026-07-12 23:42:17.804 +05:30 [INF] Successfully inserted 0 new universities from API.
+2026-07-12 23:42:18.893 +05:30 [INF] Using uvicorn executable: "C:\Users\ak731\Desktop\DSA\Portfolio Management System\venv\Scripts\uvicorn.exe"
+2026-07-12 23:42:19.111 +05:30 [INF] Started Python AI Server automatically at C:\Users\ak731\Desktop\DSA\Portfolio Management System\AutoTube\AutoTube.AI (using venv if available).
+2026-07-12 23:42:26.206 +05:30 [INF] Python AI Server health check passed.
+2026-07-12 23:42:26.206 +05:30 [INF] Unified API starting on Development
+2026-07-12 23:42:26.255 +05:30 [INF] User profile is available. Using 'C:\Users\ak731\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-12 23:42:26.300 +05:30 [INF] Gallery Auto-Uploader Background Service started.
+2026-07-12 23:42:26.357 +05:30 [INF] Start processing HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:42:26.374 +05:30 [INF] Sending HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:42:26.408 +05:30 [INF] AutoTube Video Automation Background Scheduler started. Scheduled for 9:00 AM daily.
+2026-07-12 23:42:26.408 +05:30 [INF] Next video generation cycle scheduled at "2026-07-13T09:00:00.0000000" (in 9.29 hours).
+2026-07-12 23:42:26.652 +05:30 [INF] Now listening on: http://localhost:5049
+2026-07-12 23:42:26.653 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-12 23:42:26.653 +05:30 [INF] Hosting environment: Development
+2026-07-12 23:42:26.653 +05:30 [INF] Content root path: C:\Users\ak731\Desktop\DSA\Portfolio Management System
+2026-07-12 23:42:26.807 +05:30 [INF] Received HTTP response headers after 428.5462ms - 404
+2026-07-12 23:42:26.814 +05:30 [INF] End processing HTTP request after 485.4694ms - 404
+2026-07-12 23:42:27.670 +05:30 [INF] Daily AI Generated Video upload complete: AI & Deep Learning Architectures - Daily AI Tutorial [Copyright-Free]
+2026-07-12 23:42:46.004 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-12 23:42:46.192 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-12 23:42:46.222 +05:30 [INF] The file /manifest.json was not modified
+2026-07-12 23:42:46.244 +05:30 [INF] HTTP GET /manifest.json responded 304 in 211.6976 ms
+2026-07-12 23:42:46.284 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 304 null application/json 290.128ms
+2026-07-12 23:42:48.188 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Home/GetSearchSuggestions?query=nj - null null
+2026-07-12 23:42:48.216 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:42:48.218 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:42:48.218 +05:30 [INF] HTTP GET /sw.js responded 304 in 1.7009 ms
+2026-07-12 23:42:48.221 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 2.3773ms
+2026-07-12 23:42:48.259 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System)'
+2026-07-12 23:42:48.318 +05:30 [INF] Route matched with {action = "GetSearchSuggestions", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSearchSuggestions(System.String) on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-12 23:42:48.370 +05:30 [INF] Accessing expired session, Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0
+2026-07-12 23:42:48.473 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Home/GetSearchSuggestions?query=njj - null null
+2026-07-12 23:42:48.489 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System)'
+2026-07-12 23:42:48.492 +05:30 [INF] Route matched with {action = "GetSearchSuggestions", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSearchSuggestions(System.String) on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-12 23:42:48.509 +05:30 [INF] Accessing expired session, Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0
+2026-07-12 23:42:48.904 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/Home/GetSearchSuggestions?query=njj%27 - null null
+2026-07-12 23:42:48.907 +05:30 [INF] Executing endpoint 'Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System)'
+2026-07-12 23:42:48.908 +05:30 [INF] Route matched with {action = "GetSearchSuggestions", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSearchSuggestions(System.String) on controller Portfolio_Management_System.Controllers.HomeController (Portfolio Management System).
+2026-07-12 23:42:48.920 +05:30 [INF] Accessing expired session, Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0
+2026-07-12 23:42:49.402 +05:30 [INF] Executing JsonResult, writing value of type 'System.Linq.Enumerable+IListSkipTakeIterator`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-12 23:42:49.444 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System) in 1112.1643ms
+2026-07-12 23:42:49.444 +05:30 [INF] Executing JsonResult, writing value of type 'System.Linq.Enumerable+IListSkipTakeIterator`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-12 23:42:49.445 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System) in 952.5559ms
+2026-07-12 23:42:49.445 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System)'
+2026-07-12 23:42:49.445 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System)'
+2026-07-12 23:42:49.450 +05:30 [INF] Session started; Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0, Id:a0e7557d-3ac8-3371-a67b-1b45ab2ed6e9
+2026-07-12 23:42:49.450 +05:30 [INF] Session started; Key:bcf52861-19bd-56f7-ae47-dedee66fc7c0, Id:aece881e-fb3e-d449-67ce-6b939f3fb3ca
+2026-07-12 23:42:49.455 +05:30 [INF] HTTP GET /Home/GetSearchSuggestions responded 200 in 981.1234 ms
+2026-07-12 23:42:49.455 +05:30 [INF] HTTP GET /Home/GetSearchSuggestions responded 200 in 1265.9822 ms
+2026-07-12 23:42:49.456 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Home/GetSearchSuggestions?query=nj - 200 null application/json; charset=utf-8 1267.684ms
+2026-07-12 23:42:49.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Home/GetSearchSuggestions?query=njj - 200 null application/json; charset=utf-8 983.3956ms
+2026-07-12 23:42:50.912 +05:30 [INF] Executing JsonResult, writing value of type 'System.Linq.Enumerable+IListSkipTakeIterator`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-12 23:42:50.919 +05:30 [INF] Executed action Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System) in 2010.9502ms
+2026-07-12 23:42:50.920 +05:30 [INF] Executed endpoint 'Portfolio_Management_System.Controllers.HomeController.GetSearchSuggestions (Portfolio Management System)'
+2026-07-12 23:42:50.992 +05:30 [INF] HTTP GET /Home/GetSearchSuggestions responded 200 in 2087.7109 ms
+2026-07-12 23:42:50.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/Home/GetSearchSuggestions?query=njj%27 - 200 null application/json; charset=utf-8 2088.3558ms
+2026-07-12 23:47:00.854 +05:30 [WRN] JWT SecretKey missing in configuration. JWT Auth not configured.
+2026-07-12 23:47:09.793 +05:30 [INF] Executed DbCommand (227ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:47:09.805 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-07-12 23:47:10.178 +05:30 [INF] Executed DbCommand (368ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-07-12 23:47:10.789 +05:30 [INF] Executed DbCommand (192ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-07-12 23:47:11.403 +05:30 [INF] Executed DbCommand (212ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-12 23:47:11.608 +05:30 [INF] Executed DbCommand (204ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-12 23:47:11.813 +05:30 [INF] Executed DbCommand (202ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-12 23:47:11.828 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-07-12 23:47:12.236 +05:30 [INF] Executed DbCommand (216ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-07-12 23:47:12.245 +05:30 [INF] Initializing AKTU multi-university portal database schema...
+2026-07-12 23:47:14.587 +05:30 [INF] Database tables initialized/verified successfully.
+2026-07-12 23:47:14.598 +05:30 [INF] Fetching Indian universities from API...
+2026-07-12 23:47:15.963 +05:30 [INF] Loaded 475 universities from API. Syncing with database...
+2026-07-12 23:47:16.717 +05:30 [INF] Successfully inserted 0 new universities from API.
+2026-07-12 23:47:17.885 +05:30 [INF] Using uvicorn executable: "C:\Users\ak731\Desktop\DSA\Portfolio Management System\venv\Scripts\uvicorn.exe"
+2026-07-12 23:47:18.065 +05:30 [INF] Started Python AI Server automatically at C:\Users\ak731\Desktop\DSA\Portfolio Management System\AutoTube\AutoTube.AI (using venv if available).
+2026-07-12 23:47:23.182 +05:30 [INF] Python AI Server health check passed.
+2026-07-12 23:47:23.184 +05:30 [INF] Unified API starting on Development
+2026-07-12 23:47:23.217 +05:30 [INF] User profile is available. Using 'C:\Users\ak731\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-12 23:47:23.251 +05:30 [INF] Gallery Auto-Uploader Background Service started.
+2026-07-12 23:47:23.278 +05:30 [INF] Start processing HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:47:23.285 +05:30 [INF] Sending HTTP request GET https://www.youtube.com/@CodeCrafters42
+2026-07-12 23:47:23.309 +05:30 [INF] AutoTube Video Automation Background Scheduler started. Scheduled for 9:00 AM daily.
+2026-07-12 23:47:23.310 +05:30 [INF] Next video generation cycle scheduled at "2026-07-13T09:00:00.0000000" (in 9.21 hours).
+2026-07-12 23:47:23.453 +05:30 [INF] Now listening on: http://localhost:5049
+2026-07-12 23:47:23.453 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-12 23:47:23.453 +05:30 [INF] Hosting environment: Development
+2026-07-12 23:47:23.453 +05:30 [INF] Content root path: C:\Users\ak731\Desktop\DSA\Portfolio Management System
+2026-07-12 23:47:23.616 +05:30 [INF] Received HTTP response headers after 325.4018ms - 404
+2026-07-12 23:47:23.624 +05:30 [INF] End processing HTTP request after 357.9705ms - 404
+2026-07-12 23:51:22.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - null null
+2026-07-12 23:51:22.780 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-12 23:51:22.992 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-07-12 23:51:23.022 +05:30 [INF] The file /manifest.json was not modified
+2026-07-12 23:51:23.022 +05:30 [INF] The file /css/site.css was not modified
+2026-07-12 23:51:23.034 +05:30 [INF] HTTP GET /css/site.css responded 304 in 284.6984 ms
+2026-07-12 23:51:23.034 +05:30 [INF] HTTP GET /manifest.json responded 304 in 243.9744 ms
+2026-07-12 23:51:23.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 304 null application/json 278.3165ms
+2026-07-12 23:51:23.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/css/site.css?v=sRyjsd1L8K3j6s0MFvWVxY0FwJH8ZY0yw9NGYCFfF4s - 304 null text/css 361.0645ms
+2026-07-12 23:51:25.673 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:51:25.676 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:51:25.676 +05:30 [INF] HTTP GET /sw.js responded 304 in 2.8906 ms
+2026-07-12 23:51:25.678 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 4.7435ms
+2026-07-12 23:53:23.207 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:53:23.208 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:53:23.209 +05:30 [INF] HTTP GET /sw.js responded 304 in 1.1694 ms
+2026-07-12 23:53:23.209 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 1.6996ms
+2026-07-12 23:55:48.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:55:48.039 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:55:48.040 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.7752 ms
+2026-07-12 23:55:48.041 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 2.096ms
+2026-07-12 23:56:14.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:56:14.506 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:56:14.506 +05:30 [INF] HTTP GET /sw.js responded 304 in 3.0222 ms
+2026-07-12 23:56:14.506 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 4.5114ms
+2026-07-12 23:57:13.527 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/manifest.json - null null
+2026-07-12 23:57:13.530 +05:30 [INF] The file /manifest.json was not modified
+2026-07-12 23:57:13.530 +05:30 [INF] HTTP GET /manifest.json responded 304 in 1.9645 ms
+2026-07-12 23:57:13.530 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/manifest.json - 304 null application/json 2.9835ms
+2026-07-12 23:57:15.647 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5049/sw.js - null null
+2026-07-12 23:57:15.661 +05:30 [INF] The file /sw.js was not modified
+2026-07-12 23:57:15.662 +05:30 [INF] HTTP GET /sw.js responded 304 in 0.4548 ms
+2026-07-12 23:57:15.662 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5049/sw.js - 304 null text/javascript 14.4418ms

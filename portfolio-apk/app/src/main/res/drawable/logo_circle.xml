@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cyan glowing circle for the logo background -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:angle="135"
+        android:startColor="#00D4FF"
+        android:endColor="#8B5CF6"
+        android:type="linear" />
+</shape>
